@@ -18,6 +18,10 @@
 		0F33210218BD429900693956 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F33210118BD429900693956 /* Default-568h@2x.png */; };
 		0F33210518BD429900693956 /* CSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F33210418BD429900693956 /* CSViewController.m */; };
 		0F33210818BD429900693956 /* CSViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F33210618BD429900693956 /* CSViewController.xib */; };
+		856108BF18BEEC4600525E1E /* List.m in Sources */ = {isa = PBXBuildFile; fileRef = 856108B818BEEC4600525E1E /* List.m */; };
+		856108C018BEEC4600525E1E /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 856108BA18BEEC4600525E1E /* Person.m */; };
+		856108C118BEEC4600525E1E /* Professor.m in Sources */ = {isa = PBXBuildFile; fileRef = 856108BC18BEEC4600525E1E /* Professor.m */; };
+		856108C218BEEC4600525E1E /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 856108BE18BEEC4600525E1E /* Student.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +41,14 @@
 		0F33210318BD429900693956 /* CSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSViewController.h; sourceTree = "<group>"; };
 		0F33210418BD429900693956 /* CSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSViewController.m; sourceTree = "<group>"; };
 		0F33210718BD429900693956 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CSViewController.xib; sourceTree = "<group>"; };
+		856108B718BEEC4600525E1E /* List.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
+		856108B818BEEC4600525E1E /* List.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = List.m; sourceTree = "<group>"; };
+		856108B918BEEC4600525E1E /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		856108BA18BEEC4600525E1E /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		856108BB18BEEC4600525E1E /* Professor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Professor.h; sourceTree = "<group>"; };
+		856108BC18BEEC4600525E1E /* Professor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Professor.m; sourceTree = "<group>"; };
+		856108BD18BEEC4600525E1E /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		856108BE18BEEC4600525E1E /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +99,14 @@
 				0F3320FB18BD429900693956 /* CSAppDelegate.m */,
 				0F33210318BD429900693956 /* CSViewController.h */,
 				0F33210418BD429900693956 /* CSViewController.m */,
+				856108B718BEEC4600525E1E /* List.h */,
+				856108B818BEEC4600525E1E /* List.m */,
+				856108B918BEEC4600525E1E /* Person.h */,
+				856108BA18BEEC4600525E1E /* Person.m */,
+				856108BB18BEEC4600525E1E /* Professor.h */,
+				856108BC18BEEC4600525E1E /* Professor.m */,
+				856108BD18BEEC4600525E1E /* Student.h */,
+				856108BE18BEEC4600525E1E /* Student.m */,
 				0F33210618BD429900693956 /* CSViewController.xib */,
 				0F3320F218BD429900693956 /* Supporting Files */,
 			);
@@ -175,6 +195,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F3320F818BD429900693956 /* main.m in Sources */,
+				856108C118BEEC4600525E1E /* Professor.m in Sources */,
+				856108BF18BEEC4600525E1E /* List.m in Sources */,
+				856108C018BEEC4600525E1E /* Person.m in Sources */,
+				856108C218BEEC4600525E1E /* Student.m in Sources */,
 				0F3320FC18BD429900693956 /* CSAppDelegate.m in Sources */,
 				0F33210518BD429900693956 /* CSViewController.m in Sources */,
 			);
@@ -299,6 +323,7 @@
 				0F33210D18BD429900693956 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
