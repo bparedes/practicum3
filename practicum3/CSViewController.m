@@ -89,6 +89,10 @@
         NSString *plainText = [NSString stringWithFormat:@"Department: "];
         _majorLabel.text = plainText;
         
+        //change the text for the gpa label
+        NSString *plainText1 = [NSString stringWithFormat:@"Salary: "];
+        _gpaLabel.text = plainText1;
+
         _tenuredLabel.hidden = false;
         _tenuredSwitch.hidden = false;
     }
@@ -126,5 +130,6 @@
 - (IBAction)viewListButton:(UIButton *)sender{
     //show the names entered
 }
+
 
 @end
