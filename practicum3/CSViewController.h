@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 //import classes
 
-@interface CSViewController : UIViewController{
+@interface CSViewController : UIViewController <UIActionSheetDelegate>{
     //create instances and constants here
     //id list = [[List alloc] init];
 }
@@ -28,6 +28,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *IDLabel;
 @property (weak, nonatomic) IBOutlet UITextField *IDTxt;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *studentProfessorButton;
+//student view
 @property (weak, nonatomic) IBOutlet UILabel *majorLabel;
 @property (weak, nonatomic) IBOutlet UITextField *majorTxt;
 @property (weak, nonatomic) IBOutlet UILabel *gpaLabel;
@@ -43,13 +44,33 @@
 @property (weak, nonatomic) IBOutlet UIButton *submitButton;
 
 //methods
-//hides initial view 
+//hides initial view elements when any button is pressed
 -(IBAction)hideAll:(id)sender;
+//displays elements associated with action
 -(IBAction)addButtonClicked:(UIButton *) sender;
+//displays elements associated with action
 - (IBAction)segmentedStudentProfessor:(UISegmentedControl *)sender;
+//set the min and max values and display values in label
 - (IBAction)sliderChanged:(UISlider *)sender;
+//displays elements associated with action
 - (IBAction)editButton:(UIButton *)sender;
+//displays elements associated with action
 - (IBAction)removeButton:(UIButton *)sender;
+/*
+ Currently doesn't do anything
 - (IBAction)viewListButton:(UIButton *)sender;
+*/
+
+//hides all elements except the initial view elements
+- (IBAction)cancelButtonClicked:(id)sender;
+
+//calls the action sheet
+- (IBAction)submitButtonPressed:(id)sender;
+//Gets rid of the keyboard
+- (IBAction)backgroundTap:(id)sender;
+
+//should display a message when characters in graduation field are greater than 4 but not working
+- (BOOL)textFieldShouldEndEditing:(UITextField *)textField;
+
 
 @end
